@@ -1,8 +1,8 @@
 let input = document.querySelector("#textBox")
 let mainDiv = document.querySelector("#grid")
-let form = document.querySelector("form")
+let btn = document.querySelector("#generatebutton")
 
-form.addEventListener("submit",fn =>{
+btn.addEventListener("submit",fn =>{
     mainDiv.innerHTML=""
     fn.preventDefault()
     if(!input.value || parseInt(input.value)<=0) return
